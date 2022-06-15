@@ -87,7 +87,7 @@
 
 .logo-studio205 a img{
     height: 69px;
-    width: 80px;
+    width: 100%;
 }
 
 .logo-studio205 .Name-web a{
@@ -95,6 +95,7 @@
 }
 
 .logo-studio205 .Name-web a h3{
+    width: 100%;
     padding-right: 20px;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -113,6 +114,16 @@
 
 .navigation-layout .main-menu li{
     margin: 0 13px 0 13px;
+}
+
+/* Reponsive */
+@media screen and (max-width: 414px) {
+    /* .logo-studio205{
+        display: none;
+    } */
+    .navigation-layout{
+        justify-content: space-between;
+    }
 }
 
 /* Reponsive */
@@ -158,6 +169,10 @@
 /* Reponsive */
 @media screen and (max-width: 1026px) {
     .navigation-group .navigation-layout{
+        display: none;
+    }
+    .layout-header .center-menu .info-btn,
+    .layout-header .center-menu .setting-btn{
         display: none;
     }
 }
