@@ -117,10 +117,14 @@
 }
 
 /* Reponsive */
+
 @media screen and (max-width: 414px) {
     /* .logo-studio205{
         display: none;
     } */
+    .logo-studio205 .Name-web a h3{
+        font-size: 15px;
+    }
     .navigation-layout{
         justify-content: space-between;
     }
@@ -174,6 +178,9 @@
     .layout-header .center-menu .info-btn,
     .layout-header .center-menu .setting-btn{
         display: none;
+    }
+    .layout-header .center-menu .nav-bars{
+        display: block;
     }
 }
 
@@ -409,6 +416,11 @@
 .main-footer{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-footer div{
+    margin: 0 1% 0 1%;
 }
 
 .sologan-studio-205 p{
@@ -446,4 +458,13 @@
     text-decoration: none;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:807px){
+    .main-footer{
+        display: none;  
+    }
+    .footer-page{
+        padding-top: 0;
+    }
 }
