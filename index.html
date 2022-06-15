@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
+    <script language="javascript" src="assets/Event_HoverButton/index.js"></script>
     <div class="main">
         <div class="layout-header">
             <div class="navigation-group">
@@ -25,12 +26,12 @@
                 <div class="navigation-layout">
                     <ul class="main-menu">
                         <li>
-                            <a href="#" onmouseover="myFunction()">
+                            <a href="#" onmouseover="HomeFunction()" class="Home">
                                 <i class="fa-solid fa-house" style="margin-right: 4px;"></i>
                                 Home
                             </a> 
                             <script>
-                                function myFunction() {
+                                function HomeFunction() {
                                     for(var i = 1; i <= 10; i++){
                                         var str = "item" + i;
                                         document.getElementById(str).style.display = "none";
@@ -39,7 +40,7 @@
                                 }
                             </script>  
                         </li>
-                        <li><a href="#" onmouseover="On_Function()" onmouseout="Out_Function">Python</a></li>
+                        <li><a href="#" onmouseover="On_Function()">Python</a></li>
                         <script>
                             function On_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -49,7 +50,7 @@
                                     document.getElementById("item2").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="Jv_Function()" onmouseout="Out_Function">Java</a></li>
+                        <li><a href="#" onmouseover="Jv_Function()">Java</a></li>
                         <script>
                             function Jv_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -59,7 +60,7 @@
                                     document.getElementById("item3").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="Js_Function()" onmouseout="Out_Function">JavaScript</a></li>
+                        <li><a href="#" onmouseover="Js_Function()">JavaScript</a></li>
                         <script>
                             function Js_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -69,7 +70,7 @@
                                     document.getElementById("item4").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="HTML_Function()" onmouseout="Out_Function">HTML</a></li>
+                        <li><a href="#" onmouseover="HTML_Function()">HTML</a></li>
                         <script>
                             function HTML_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -79,7 +80,7 @@
                                     document.getElementById("item5").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="CSS_Function()" onmouseout="Out_Function">CSS</a></li>
+                        <li><a href="#" onmouseover="CSS_Function()">CSS</a></li>
                         <script>
                             function CSS_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -89,7 +90,7 @@
                                     document.getElementById("item6").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="C_Function()" onmouseout="Out_Function">C/C++</a></li>
+                        <li><a href="#" onmouseover="C_Function()">C/C++</a></li>
                         <script>
                             function C_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -99,7 +100,7 @@
                                     document.getElementById("item7").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="Jq_Function()" onmouseout="Out_Function">JQuery</a></li>
+                        <li><a href="#" onmouseover="Jq_Function()">JQuery</a></li>
                         <script>
                             function Jq_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -109,7 +110,7 @@
                                     document.getElementById("item8").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="Jq_Function()" onmouseout="Out_Function">SQL</a></li>
+                        <li><a href="#" onmouseover="Jq_Function()">SQL</a></li>
                         <script>
                             function SQL_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -119,7 +120,7 @@
                                     document.getElementById("item9").style.display = "block";
                                 }
                         </script>
-                        <li><a href="#" onmouseover="CT_Function()" onmouseout="Out_Function>C#</a></li>
+                        <li><a href="#" onmouseover="CT_Function()">C#</a></li>
                         <script>
                             function CT_Function() {
                                     for(var i = 1; i <= 10; i++){
@@ -493,7 +494,7 @@
                 </ul>
             </div>
         </div>
-        <div class="Contents">
+        <div class="Contents" onmouseout="DisplayOff()">
             <div class="slideShow-img">
                 <img class="mySlides" src="assets/img/cntt.webp" alt="">
                 <img class="mySlides" src="assets/img/1_nL86Iq6ljodehp_0H-t-JQ.png" alt="">

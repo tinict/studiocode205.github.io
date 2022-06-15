@@ -55,14 +55,25 @@
     transform-origin: center;
 }
 
-.main-menu li a:hover, .main-menu li a:focus{
+.main-menu li .Home{
     color: #2c32cf;
+    font-weight: bold;
+}
+
+.main-menu li .Home::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.main-menu li a:hover, .main-menu li a:focus{
+    color: #00BFFF;
     font-weight: bold;
 }
 
 .main-menu li a:hover::after, .main-menu li a:focus:after{
     opacity: 1;
     transform: scale(1);
+    background-color: #00BFFF;
 }
 
 .logo-studio205{
@@ -104,7 +115,8 @@
     margin: 0 13px 0 13px;
 }
 
-@media screen and (max-width: 1376px) and (min-width: 1025px){
+/* Reponsive */
+@media screen and (max-width: 1376px) {
     .navigation-layout .main-menu li{
         margin: 0 8px 0 8px;
     }
@@ -143,6 +155,12 @@
     display: flex;
 }
 
+/* Reponsive */
+@media screen and (max-width: 1026px) {
+    .navigation-group .navigation-layout{
+        display: none;
+    }
+}
 
 .right-menu:before{
     content: "";
@@ -154,6 +172,11 @@
     transform: skew(170deg,0);
 }
 
+@media screen and (max-width: 1260px) {
+    .layout-header .right-menu{
+        display: none;
+    }
+}
 
 /* CSS sub menu*/
 
