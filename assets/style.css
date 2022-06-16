@@ -282,6 +282,14 @@
     border-radius: 25px;
 }
 
+/* Reponsive */
+
+@media screen and (max-width: 660px) {
+    .slideShow-img .mySlides{
+        height: 220px;
+    }
+}
+
 .contents-learn{
     padding: 12px 5% 12px 5%;
     margin-top: 18px;
@@ -318,9 +326,9 @@
 .box-child{
     display: flex;
     justify-content: space-evenly;
-    
-    overflow-x: auto;
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* overflow-x: auto; */
 }
 
 .box-child {
@@ -409,6 +417,16 @@
     }
     .title-intro{
         display: none;
+    }
+}
+
+/* Reponsive */
+@media screen and (max-width:660px){
+    .choose-img img{
+        height: 240px;
+    }
+    .why-choose{
+        background-color: #ffffff !important;
     }
 }
 
