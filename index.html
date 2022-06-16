@@ -141,9 +141,7 @@
                         </a>
                     </li>
                     <li class="nav-bars">
-                        <a href="">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
+                        <button class="btn-navbar" onclick="DisplayMenuMobile()"><i class="fa-solid fa-bars"></i></button>
                     </li>
                     <li class="info-btn">
                         <a href="">
@@ -753,7 +751,7 @@
             </div>
         </div>
     </div>
-    <div class="menu-mobile">
+    <div class="menu-mobile" id="mobile-menu-slidebar" onclick="DisplayMenuOff()">
         <div class="body-Menu">
             <div class="header-slidebar">
                 <div class="right-slidebar">
@@ -775,11 +773,12 @@
                     <li><a href=""><i class="fa-solid fa-id-card"></i></a></li>
                 </ul>
             </div>
+            <!-- C/C++ -->
             <div class="menu-item-slidebar">
                 <ul class="item-c">
                     <li>
                         <div class="menu-contents-sliderbar">
-                            <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a>
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
                             <h3>C/C++</h3>
                             <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
                         </div>
@@ -792,8 +791,160 @@
                     </li>
                 </ul>
             </div>
+            <!-- Python -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>Python</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- Java -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>Java</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- Javascript -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>Javascript</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- HTML -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>HTML</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- CSS -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>CSS</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- JQuery -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>JQuery</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            <!-- SQL -->
+            <div class="menu-item-slidebar" style="margin-top: 1px !important; margin-bottom: 1px !important; border-radius: 5px 5px 20px 20px !important;">
+                <ul class="item-c">
+                    <li>
+                        <div class="menu-contents-sliderbar">
+                            <!-- <a class="icon-c" href=""><i class="fa-brands fa-dev"></i></a> -->
+                            <h3>SQL</h3>
+                            <a class="icon-dow" href=""><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        <ul class="sub-menu-items-slidebar">
+                            <li><a href="">Đang trong quá trình cập nhât</a></li>
+                            <!-- <li><a href="">C++ Advanced</a></li>
+                            <li><a href="">OOPs</a></li>
+                            <li><a href="">Cấu trúc dữ liệu và giải thuật</a></li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
             <div class="footer-slidebar">
-
+                <ul class="footer-slidebar-icon">
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

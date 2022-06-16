@@ -21,7 +21,6 @@
 
 .main-menu{
     list-style-type: none;
-   
 }
 
 .main-menu a{
@@ -168,6 +167,13 @@
 
 .center-menu .menu-function{
     display: flex;
+}
+
+.btn-navbar{
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
 }
 
 /* Reponsive */
@@ -334,9 +340,6 @@
     border-radius: 20px;
 }
 
-.why-choose .title-intro{
-}
-
 .why-choose .title-intro h2{
     font-size: 25px;
     font-weight: 700;
@@ -472,12 +475,18 @@
 /* CSS menu mobile */
 
 .main{
-    display: none;
+    display: block;
 }
 
 .menu-mobile{
     width: 100%;
-    /* background-color: hsl(290,60%,70%); opacity: 0.3 */
+    background-color: rgba(0,0,0,.3);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease;
 }
 
 .menu-mobile .body-Menu{
@@ -516,6 +525,13 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #333333;
+}
+
+.body-Menu{
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    top: 0;
 }
 
 /* css quick menu */
@@ -558,13 +574,16 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-top: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
 }
 
 .menu-item-slidebar .item-c .menu-contents-sliderbar{
     display: flex;
     line-height: 45px;
-    justify-content: space-evenly 
+    justify-content: space-between;
 }
 
 .item-c .icon-c a{
@@ -574,6 +593,7 @@
 .item-c h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    padding-left: 16px;
 }
 
 .item-c{
@@ -592,7 +612,7 @@
 
 .menu-contents-sliderbar .icon-dow{
     text-decoration: none;
-    padding-left: 50%;
+    padding-right: 8px;
 }
 
 .item-c:hover{
@@ -609,7 +629,8 @@
 .sub-menu-items-slidebar li{
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-left: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .sub-menu-items-slidebar li{
@@ -620,3 +641,21 @@
     background-color: #a9b3bb;
 }
 
+/* CSS footer slidebar */
+
+.footer-slidebar{
+    height: 40px;
+    padding: 16px 0 16px 0;
+}
+
+.footer-slidebar .footer-slidebar-icon{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-slidebar .footer-slidebar-icon a{
+    padding: 0 8px 0 8px;
+    font-size: 20px;
+    line-height: 40px;
+}
